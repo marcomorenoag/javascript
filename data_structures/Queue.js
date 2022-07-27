@@ -1,6 +1,6 @@
 class Queue {
-    constructor() {
-        this.collection = [];
+    constructor(elements = []) {
+        this.collection = [...elements];
     }
 
     print() {
@@ -29,6 +29,10 @@ class Queue {
 }
 
 class PriorityQueue extends Queue {
+    constructor(elements) {
+        super(elements);
+    }
+
     /**
      * Enqueue new element to Queue based on its priority (1 => highest priority)
      * @param {Array [element, priority]} element 
