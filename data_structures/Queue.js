@@ -59,26 +59,32 @@ class PriorityQueue extends Queue {
     }
 }
 
-module.exports = { Queue, PriorityQueue };
-
 // UNIT TESTING
-// Queue
-const q = new Queue();
-q.enqueue('a');
-q.enqueue('b');
-q.enqueue('c');
-q.print();
-q.dequeue();
-console.log(q.front());
-q.print();
+function main() {
+    // Queue
+    const q = new Queue();
+    q.enqueue('a');
+    q.enqueue('b');
+    q.enqueue('c');
+    q.print();
+    q.dequeue();
+    console.log(q.front());
+    q.print();
 
-// Priority Queue
-const pq = new PriorityQueue();
-pq.enqueue(['Beau Carnes', 2])
-pq.enqueue(['Quincy Larson', 3])
-pq.enqueue(['Ewa Mitulska-Wójcik', 1])
-pq.enqueue(['Briana Swift', 2])
-pq.print();
-pq.dequeue();
-pq.front();
-pq.print();
+    // Priority Queue
+    const pq = new PriorityQueue();
+    pq.enqueue(['Beau Carnes', 2])
+    pq.enqueue(['Quincy Larson', 3])
+    pq.enqueue(['Ewa Mitulska-Wójcik', 1])
+    pq.enqueue(['Briana Swift', 2])
+    pq.print();
+    pq.dequeue();
+    pq.front();
+    pq.print();
+}
+
+if (typeof require !== undefined && require.main === module) {
+    main();
+}
+
+module.exports = { Queue, PriorityQueue };

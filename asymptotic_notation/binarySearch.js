@@ -1,3 +1,23 @@
+/**
+ * Implementation of binarySearch with asymptotic notation or time complexity of O(log(n))
+ * That complexity is due to reduce by two dataset every iteration (recursion in this case)
+ * Example => array of lenght "n", the result/target is to find "one" element
+ *  n
+ *  |
+ * n/2
+ *  |
+ * n/4
+ *  .
+ *  . (after "k" steps)
+ *  .
+ * n/(2^k) = 1
+ *  |
+ * n = 2^k
+ *  |
+ * log(n) = log(2^k)
+ *  |
+ * k = log(n)
+ */
 const binarySearch = (array, start, end, target) => {
     const midpoint = Math.floor((start + end) / 2);
     if (start > end) return false;

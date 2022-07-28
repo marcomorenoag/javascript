@@ -5,9 +5,19 @@ setTimeout(() => log(2));
 Promise.resolve().then(() => log(3));
 log(4);
 
-/* My thoughts
+/* Hypothesis
 4
 1
 3
 2
 */
+
+
+/**
+ * TS
+ * type A = Record<number, string>
+ * 
+ * React
+ * useEffectLayout
+ * Prevents flickering effects, 
+ */

@@ -1,3 +1,7 @@
+/**
+ * Implementation of merge sort with asymptotic notation or time complexity of O(n*log(n))
+ * That complexity is due O(n) for "merge" function and O(log(n)) for "mergeSort" 
+ */
 const merge = (leftArr, rightArr) => {
     let resultArr = [];
     let leftIdx = 0;
