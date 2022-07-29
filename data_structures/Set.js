@@ -89,7 +89,7 @@ function main() {
     console.log(setD.add('d'));
 }
 
-if (typeof require !== null && require.name === module) {
+if (typeof require !== undefined && require.name === module) {
     main();
 }
 

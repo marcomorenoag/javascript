@@ -227,7 +227,7 @@ function main() {
     console.log(`levelOrder: ${bst.levelOrder()}`);
 }
 
-if (typeof require !== null && require.main === module) {
+if (typeof require !== undefined && require.main === module) {
     main();
 }
 

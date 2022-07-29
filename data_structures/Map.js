@@ -68,7 +68,7 @@ function main () {
     console.log(map2.get(NaN));
 }
 
-if (typeof require !== null && require.main === module) {
+if (typeof require !== undefined && require.main === module) {
     main();
 }
 
