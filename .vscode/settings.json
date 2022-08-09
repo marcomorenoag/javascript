@@ -1,5 +1,5 @@
 {
-    "conventionalCommits.scopes": [
-        "data-structures"
-    ]
+  "conventionalCommits.scopes": ["data-structures", "code-challenges"],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
